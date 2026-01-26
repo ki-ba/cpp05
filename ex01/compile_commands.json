@@ -1,0 +1,74 @@
+[
+ {
+  "directory": "/home/kbarru/Documents/5_ms/cpp05/ex01",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "--std=c++98",
+   "-MD",
+   "-MP",
+   "-Iinc/",
+   "-c",
+   "src/Bureaucrat.cpp",
+   "-o",
+   ".obj/Bureaucrat.o"
+  ],
+  "file": "src/Bureaucrat.cpp"
+ },
+ {
+  "directory": "/home/kbarru/Documents/5_ms/cpp05/ex01",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "--std=c++98",
+   "-MD",
+   "-MP",
+   "-Iinc/",
+   "-c",
+   "src/GradeTooHighException.cpp",
+   "-o",
+   ".obj/GradeTooHighException.o"
+  ],
+  "file": "src/GradeTooHighException.cpp"
+ },
+ {
+  "directory": "/home/kbarru/Documents/5_ms/cpp05/ex01",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "--std=c++98",
+   "-MD",
+   "-MP",
+   "-Iinc/",
+   "-c",
+   "src/GradeTooLowException.cpp",
+   "-o",
+   ".obj/GradeTooLowException.o"
+  ],
+  "file": "src/GradeTooLowException.cpp"
+ },
+ {
+  "directory": "/home/kbarru/Documents/5_ms/cpp05/ex01",
+  "arguments": [
+   "c++",
+   "-Wall",
+   "-Wextra",
+   "-Werror",
+   "--std=c++98",
+   "-MD",
+   "-MP",
+   "-Iinc/",
+   "-c",
+   "src/main.cpp",
+   "-o",
+   ".obj/main.o"
+  ],
+  "file": "src/main.cpp"
+ }
+]

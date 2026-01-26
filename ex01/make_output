@@ -1,0 +1,6 @@
+mkdir -p .obj/
+c++ -Wall -Wextra -Werror --std=c++98 -MD -MP -Iinc/ -c src/Bureaucrat.cpp -o .obj/Bureaucrat.o
+c++ -Wall -Wextra -Werror --std=c++98 -MD -MP -Iinc/ -c src/GradeTooHighException.cpp -o .obj/GradeTooHighException.o
+c++ -Wall -Wextra -Werror --std=c++98 -MD -MP -Iinc/ -c src/GradeTooLowException.cpp -o .obj/GradeTooLowException.o
+c++ -Wall -Wextra -Werror --std=c++98 -MD -MP -Iinc/ -c src/main.cpp -o .obj/main.o
+c++ -Wall -Wextra -Werror --std=c++98 -MD -MP -Iinc/ .obj/Bureaucrat.o .obj/GradeTooHighException.o .obj/GradeTooLowException.o .obj/main.o -o bureaucrat
