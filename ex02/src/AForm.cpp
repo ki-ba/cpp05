@@ -122,5 +122,5 @@ void AForm::execute(Bureaucrat const & executor) const
 
 void AForm::make_action() const
 {
-	std::cout << "this form is to obscure to be actionnable." << std::endl;
+	std::cout << "this form is so obscure no one can tell how to execute it." << std::endl;
 }

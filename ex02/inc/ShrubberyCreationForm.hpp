@@ -13,6 +13,9 @@
 #ifndef SHRUBBERYCREATIONFORM_HPP
 # define SHRUBBERYCREATIONFORM_HPP
 
+# define SHRUBBERYCREATION_SIGN_GRADE 145
+# define SHRUBBERYCREATION_EXEC_GRADE 137
+
 # include "AForm.hpp"
 
 class ShrubberyCreationForm : public AForm
@@ -22,10 +25,10 @@ private:
 
 public:
 		ShrubberyCreationForm();
+		ShrubberyCreationForm(const ShrubberyCreationForm& other);
 		ShrubberyCreationForm(std::string target);
 		~ShrubberyCreationForm();
 		void make_action() const;
 
 };
-
 #endif

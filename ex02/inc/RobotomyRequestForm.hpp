@@ -15,8 +15,8 @@
 
 #include "AForm.hpp"
 
-#define ROBOTOMY_SIGN_GRADE 72
-#define ROBOTOMY_EXEC_GRADE 45
+#define ROBOTOMYREQUEST_SIGN_GRADE 72
+#define ROBOTOMYREQUEST_EXEC_GRADE 45
 
 class RobotomyRequestForm : public AForm
 {

@@ -13,11 +13,11 @@
 #include "RobotomyRequestForm.hpp"
 #include <iostream>
 
-RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", false, ROBOTOMY_SIGN_GRADE, ROBOTOMY_EXEC_GRADE), _target("default")
+RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", false, ROBOTOMYREQUEST_SIGN_GRADE, ROBOTOMYREQUEST_EXEC_GRADE), _target("default")
 {
 }
 
-RobotomyRequestForm::RobotomyRequestForm(const std::string& target) : AForm("RobotomyRequestForm", false, ROBOTOMY_SIGN_GRADE, ROBOTOMY_EXEC_GRADE), _target(target)
+RobotomyRequestForm::RobotomyRequestForm(const std::string& target) : AForm("RobotomyRequestForm", false, ROBOTOMYREQUEST_SIGN_GRADE, ROBOTOMYREQUEST_EXEC_GRADE), _target(target)
 {
 }
 

@@ -13,11 +13,11 @@
 #include "PresidentialPardonForm.hpp"
 #include <iostream>
 
-PresidentialPardonForm::PresidentialPardonForm() : AForm("PresidentialPardonForm", false, 25, 5), _target("default")
+PresidentialPardonForm::PresidentialPardonForm() : AForm("PresidentialPardonForm", false, PRESIDENTIALPARDON_SIGN_GRADE, PRESIDENTIALPARDON_EXEC_GRADE), _target("default")
 {
 }
 
-PresidentialPardonForm::PresidentialPardonForm(const std::string& target) : AForm("PresidentialPardonForm", false, 25, 5), _target(target)
+PresidentialPardonForm::PresidentialPardonForm(const std::string& target) : AForm("PresidentialPardonForm", false, PRESIDENTIALPARDON_SIGN_GRADE, PRESIDENTIALPARDON_EXEC_GRADE), _target(target)
 {
 }
 

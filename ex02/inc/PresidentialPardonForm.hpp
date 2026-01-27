@@ -13,6 +13,9 @@
 #ifndef PRESIDENTIALPARDONFORM_HPP
 #define PRESIDENTIALPARDONFORM_HPP
 
+# define PRESIDENTIALPARDON_SIGN_GRADE 25
+# define PRESIDENTIALPARDON_EXEC_GRADE 5
+
 #include "AForm.hpp"
 
 class PresidentialPardonForm : public AForm
