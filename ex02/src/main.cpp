@@ -13,6 +13,7 @@
 #include "Bureaucrat.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
+#include "ShrubberyCreationForm.hpp"
 
 #define GENERIC_ERROR "a fraudulent form was intercepted : "
 
@@ -22,7 +23,11 @@ int	main(void)
 	Bureaucrat b("Billy", 102);
 	RobotomyRequestForm r42("John Doe");
 	PresidentialPardonForm p42("Jane Doe");
+	ShrubberyCreationForm s42("Garden");
 
+
+	a.signForm(s42);
+	a.executeForm(s42);
 
 	a.promote();
 	a.signForm(r42);

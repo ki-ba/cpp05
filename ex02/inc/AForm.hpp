@@ -35,7 +35,7 @@ class AForm
 		bool	isSigned() const;
 
 		void execute(Bureaucrat const & executor) const;
-		virtual void make_action() const;
+		virtual void make_action() const = 0;
 
 		AForm &operator=(const AForm& other); // akes no sense since only signature is non-const
 

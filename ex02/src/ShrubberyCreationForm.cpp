@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
+#include <fstream>
 
 ShrubberyCreationForm::ShrubberyCreationForm() : AForm("Shrubbery Creation Form", false, SHRUBBERYCREATION_SIGN_GRADE, SHRUBBERYCREATION_EXEC_GRADE), _target("Home")
 {
@@ -30,5 +31,22 @@ ShrubberyCreationForm::~ShrubberyCreationForm()
 
 void ShrubberyCreationForm::make_action() const
 {
-	// write tree to file
+	std::ofstream file;
+	file.open((this->_target + "_shrubbery").c_str());
+
+file << std::endl << std::endl;
+file << "                         oxoxoo    ooxoo "<< std::endl;
+file << "                        ooxoxo oo  oxoxooo"<< std::endl;
+file << "                        oooo xxoxoo ooo ooox"<< std::endl;
+file << "                        oxo o oxoxo  xoxxoxo"<< std::endl;
+file << " 	       _-_         oxo xooxoooo o oo         _-_"<< std::endl;
+file << " 	    /~~   ~~\\	    ooo\\oo\\  /o/o         /~~   ~~\\"<< std::endl;
+file << " 	 /~~         ~~\\        \\  \\/ /        /~~         ~~\\"<< std::endl;
+file << " 	{               }        |   /        {               }"<< std::endl;
+file << " 	 \\  _-     -_  /         |  |          \\  _-     -_  /"<< std::endl;
+file << " 	   ~  \\ //  ~	         | D|            ~  \\ //  ~"<< std::endl;
+file << " 	_- -   | | _- _	         |  |         _- -   | | _- _"<< std::endl;
+file << " 	  _ -  | |   -_	         |  |           _ -  | |   -_"<< std::endl;
+file << " 	      // \\        ______/____\\____          // \\"<< std::endl;
+
 }

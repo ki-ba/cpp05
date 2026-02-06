@@ -12,6 +12,7 @@
 
 #include "RobotomyRequestForm.hpp"
 #include <iostream>
+#include <cstdlib>
 
 RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", false, ROBOTOMYREQUEST_SIGN_GRADE, ROBOTOMYREQUEST_EXEC_GRADE), _target("default")
 {
@@ -37,12 +38,14 @@ RobotomyRequestForm& RobotomyRequestForm::operator=(const RobotomyRequestForm& o
 
 void RobotomyRequestForm::make_action() const
 {
+	srand(time(NULL));
+
+	int temp = rand() % 2;
 	std::cout << "bzzzzzz.. ZZZZKK vvvvvv *ziiip*" << std::endl;
-	if (true) //FIXME:
+	if (temp)
 		std::cout << "Robotomy successful." << std::endl;
 	else
 		std::cout << "Robotomy failed." << std::endl;
-		
 }
 RobotomyRequestForm::~RobotomyRequestForm()
 {}
