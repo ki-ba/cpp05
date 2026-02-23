@@ -24,10 +24,13 @@ int	main(void)
 	RobotomyRequestForm r42("John Doe");
 	PresidentialPardonForm p42("Jane Doe");
 	ShrubberyCreationForm s42("Garden");
+	ShrubberyCreationForm s43("Park");
 
 
 	a.signForm(s42);
+	a.signForm(s43);
 	a.executeForm(s42);
+	a.executeForm(s43);
 
 	a.promote();
 	a.signForm(r42);
